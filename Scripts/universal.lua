@@ -26,7 +26,23 @@ LocalPlayer:NewSlider("WalkSpeed", "Changes your WalkSpeed!", 500, 16, function(
 	Character.Humanoid.WalkSpeed = s
 end)
 
-LocalPlayer:NewSlider("JumpPower", "Changes your JumpPower!", 500, 16, function(s)
+LocalPlayer:NewSlider("JumpPower", "Changes your JumpPower!", 500, 50, function(s)
 	Character.Humanoid.JumpPower = s
 end)
 
+Humanoid:NewSlider("HipHeight", "Changes Your HipHeight", 50, 0, function(s)
+	Character.HipHeight = s
+end)
+
+local freezed = false
+Humanoid:NewKeybind("Freeze Player", "Freezes Your Character", Enum.KeyCode.F, function()
+	part = Character.HumanoidRootPart
+	
+	if freezed == false then
+		freezed = true
+		part.Anchored = true
+	else
+		freezed = false
+		part.Anchored = false
+	end
+end)
