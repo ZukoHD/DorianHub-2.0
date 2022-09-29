@@ -37,7 +37,7 @@ end)
 local freezed = false
 Humanoid:NewKeybind("Freeze Player", "Freezes Your Character", Enum.KeyCode.F, function()
 	local part = Character.HumanoidRootPart
-	
+
 	if freezed == false then
 		freezed = true
 		part.Anchored = true
@@ -83,3 +83,12 @@ UserInfo:NewTextBox("Display Name", "Changes your Display Name", function(txt)
 end)
 
 --// Trolling
+local TOBE = Trolling:NewSection("Come Back Later") -- Idk what message to choose but just know i wont be doing scripts for this section until later
+
+--// Credits
+function credit(message)
+	Credits:NewSection(message)
+end
+
+credit("Made By dori#4040")
+credit("Using Kavo UI Library")
