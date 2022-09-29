@@ -1,6 +1,6 @@
 local id = game.PlaceId
 local games = {
-	[606849621] = "https://raw.githubusercontent.com/ZukoHD/DorianHub-2.0/main/Scripts/jailbreak.lua"
+	[0] = ""
 }
 
 local universal = "https://raw.githubusercontent.com/ZukoHD/DorianHub-2.0/main/Scripts/universal.lua"
