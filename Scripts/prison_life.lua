@@ -148,8 +148,8 @@ end)
 local CharacterTT = Movement:NewSection("Character")
 local Trolling = Movement:NewSection("Trolling")
 
-CharacterTT:NewSlider("Walkms", "Changes Your Walkms", 500, 16, function(s)
-	Character.Humanoid.Walkms = s
+CharacterTT:NewSlider("WalkSpeed", "Changes Your WalkSpeed", 500, 16, function(s)
+	Character.Humanoid.WalkSpeed = s
 end)
 
 CharacterTT:NewSlider("JumpPower", "Changes Your JumpPower", 500, 50, function(s)
