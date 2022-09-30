@@ -1,14 +1,4 @@
-local id = game.PlaceId
-local games = {
-	[0] = ""
+local games = { --// Add Games Here With Format: [GAME_ID] = "GITHUB SCRIPT LINK"
+	[0] = "", --//
 }
-
-local universal = "https://raw.githubusercontent.com/ZukoHD/DorianHub-2.0/main/Scripts/universal.lua"
-
-if games[id] then
-	local website = games[id]
-	
-	loadstring(game:HttpGet(website))()
-else
-	loadstring(game:HttpGet(universal))()
-end
+local exploit = "Unknown" if syn then exploit = 'Synapse X' elseif PROTOSMASHER_LOADED then exploit = 'Protosmasher' elseif issentinelclosure then exploit = 'Sentinel' elseif Krnl then exploit = 'Krnl' else game:GetService("Players").LocalPlayer:Kick("Unsupported Exploit!") end game:GetService("StarterGui"):SetCore("SendNotification", { Title = "Dorian Hub - Loaded",Text = "Dorian Hub has been loaded!",Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})Duration = 3 if games[game.PlaceId] then	loadstring(game:HttpGet(games[game.PlaceId]))() else loadstring(game:HttpGet("https://raw.githubusercontent.com/ZukoHD/DorianHub-2.0/main/Scripts/universal.lua"))() end
